@@ -1,9 +1,17 @@
-html, body{
-		height:100%;
+html, body {
+	height:100%;
 }
 
-.grandParentContaniner{
-		display:table; height:100%; margin: 0 auto;
+html {
+  background: -webkit-linear-gradient(#0b8793, #360033);
+  background: -o-linear-gradient(#0b8793, #360033);
+  background: linear-gradient(#0b8793, #360033); /* Safari 5.1 to 6.0 */ /* Opera 11.1 to 12.0 */ /* Firefox 3.6 to 15 */ /* Standard syntax */
+}				
+
+.grandParentContaniner {
+	display: table; 
+	/*height:100%; */
+	margin: auto;
 }
 
 .container {
@@ -37,7 +45,7 @@ padding-top: 12px;
 header {
 	width: 100%;
 	height: 140px;
-	background-color: #3dd7e5;
+	/*background-color: #3dd7e5;*/
 	color: white;
 }
 
@@ -56,6 +64,32 @@ input {
 	border: 0px;
 }
 
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 17px;
+  padding-left: 116px;
+  /*font-weight: 700;*/
+  color: white;
+  /*background-color: black;*/
+  display: inline-block;
+}
+.submit-button:focus + input,
+.submit-button + input:hover {
+	color: #0c8591;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  cursor: pointer;
+}
 .header_links {
 	font-size: 20px;
 	font-weight: bold;
@@ -67,8 +101,15 @@ input {
 }
 
 #Reg_title {
-	padding-left: 50px;
+	padding-left: 80px;
 	padding-top: 20px;
+}
+
+#Judgment_title {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	color: white;
 }
 
 #Login_title {
@@ -79,11 +120,14 @@ input {
 .form-inputs {
 	padding: 10px;
 	font-size: 17px;
+	color: white;
 }
 
 .input-box {
 	width: 100%;
 	background-color: #e8e8e8;
+	color: #64676b;
+	box-sizing: border-box;
 }
 .home-page-links{
 	margin: 15px;
@@ -92,99 +136,18 @@ input {
 }
 .submit-button {
 	width: 100%;
-	background-color: #3dd7e5;
+	background-color: #340537;
 	padding: 10px;
 	background-size:50px;
 	color: white;
+	font-weight: bold;
 }
+
 .nav-links {
 	text-decoration-line: none;
 	color: white;
 	margin: 1px;
 }
-
-@media only screen and (max-width: 737px) {
-    header {
-      background-color: orange;
-		}
-
-		header h1 {
-			font-size: 40px;
-			padding-top: 57px;
-		}
-
-		.header_links {
-			font-size: 18px;
-		}
-
-		.submit-button {
-			background-color: orange;
-		}
-
-@media only screen and (max-width: 627px) {
-    header {
-      background-color: pink;
-		}
-
-		header h1 {
-			font-size: 30px;
-			padding-top: 63px;
-		}
-
-		.header_links {
-			font-size: 16px;
-		}
-
-		.submit-button {
-			background-color: pink;
-		}
-}
-
-@media only screen and (max-width: 518px) {
-    header {
-      background-color: #c697ef;
-		}
-
-		header h1 {
-			font-size: 20px;
-			padding-top: 72px;
-		}
-
-		.header_links {
-			font-size: 14px;
-		}
-
-		.submit-button {
-			background-color: #c697ef;
-		}
-}
-
-
-@media only screen and (max-width: 408px) {
-    header {
-      background-color: #6bffb7;
-		}
-
-		header h1 {
-			font-size: 18px;
-			padding-top: 72px;
-		}
-
-		.header_links {
-			font-size: 13px;
-		}
-
-		.submit-button {
-			background-color: #6bffb7;
-		}
-}
-
-
-
-
-
-
-
 
 
 

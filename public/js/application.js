@@ -21,10 +21,30 @@ $(document).ready(function() {
    10. update the page
   *************************************/
 
-  $(".submit-button").on("click", function() {
-    /* Act on the event */
-    event.preventDefault();
-    console.log("yo")
-  });
+//   $(".judgment_form").on("submit", function() {
+//     /* Act on the event */
+//     event.preventDefault();
+    
 
-});
+//     var $form = $(this);
+    
+//     var destination = $form.attr("action");
+//     // var method = $form.attr("method");
+//     // console.log(destination)
+//     var judgmentData = $form.serialize();
+//     // console.log(judgmentData)
+//     var requestPromise = $.ajax({
+//       url: destination,
+//       type: 'post',
+//       data: judgmentData
+//     });
+
+//     requestPromise.done(function(response){
+//       console.log(response);
+
+
+//     });
+
+//   });
+
+// });

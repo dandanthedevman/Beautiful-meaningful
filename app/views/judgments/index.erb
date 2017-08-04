@@ -2,22 +2,23 @@
 
   <div class="container">
 
-    <h1 id="Judment_title">Care to find out?</h1>
+    <h1 id="Judgment_title">Care to find out?</h1>
 
-      <form class="judgment_form" action="/judgments" method="POST" enctype="multipart/form-data">
+      <form class="judgment_form" action="/judgments" method="post" enctype="multipart/form-data">
 
-        <div class="form-inputs" id="picture_form">
-          <label for="file">Picture</label>
-          <input class="input-box" id="file" type="file" name="file">
+        <div id="picture_form">
+          <!-- class="form-inputs" -->
+          <input type="file" name="file" id="file" class="inputfile" />
+          <label for="file">Choose a file</label>
         </div>
-
+        
         <div class="form-inputs">
            <label for="name">Name</label>
            <input class="input-box" id="name" type="text" name="name">
         </div>
 
         <div class="form-inputs">
-          <input class="submit-button" type="submit" value="judgment">
+          <input class="submit-button" type="submit" value="Judgment">
         </div>
 
       </form>
