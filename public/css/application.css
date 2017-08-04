@@ -14,9 +14,26 @@ html {
 	margin: auto;
 }
 
+#picture{
+	padding-left: 200px;
+}
+
+#tags {
+	color: white;
+
+#name {
+	color: white;
+}
+
+}
 .container {
 	display: inline-block;
  	vertical-align: middle;
+}
+
+.response {
+	color: white;
+	padding-top: 80px;
 }
 
 .question-list {

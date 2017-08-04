@@ -16,10 +16,10 @@ require 'pg'
 require 'active_record'
 require 'logger'
 require 'bcrypt'
-
+require 'pry'
 require 'sinatra'
 require "sinatra/reloader" if development?
-
+require 'net/http'
 require 'erb'
 # require 'faker'
 

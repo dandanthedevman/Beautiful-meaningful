@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 # PostgreSQL driver
 
 gem 'pg'
-gem 'puma'
 # Sinatra driver
 gem 'sinatra', '~> 1.0'
 gem 'sinatra-contrib'
@@ -14,7 +13,7 @@ gem 'activerecord', '~>4.2.0'
 
 gem 'bcrypt'
 gem 'rake'
-
+gem 'pry'
 gem 'shotgun', '~>0.9.1'
 
 group :test do
